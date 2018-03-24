@@ -1,0 +1,17 @@
+### Application ###
+node_modules/
+package-lock.json
+
+### Logs ###
+logs
+*.log
+
+### MacOS ###
+**/.DS_Store
+.DS_Store
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr

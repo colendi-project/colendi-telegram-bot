@@ -1,0 +1,20 @@
+{
+  "name": "colenditelegram",
+  "version": "0.1.0",
+  "description": "Colendi Telegram Bot",
+  "main": "src/app.js",
+  "author": "Colendi",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "telebot": "^1.2.5",
+    "winston": "^2.4.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/colendi-project/colenditelegram.git"
+  },
+  "scripts": {
+    "start": "node src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
