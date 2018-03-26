@@ -29,7 +29,7 @@ const logger = new (winston.Logger)({
             humanReadableUnhandledException: true
         }),
         new (winston.transports.File)({
-            filename: `${logDir}/colendibot.log`,
+            filename: `${logDir}/colendi_telegrambot.log`,
             timestamp: tsFormat,
             datePattern: 'yyyy-MM-dd',
             prepend: true,
