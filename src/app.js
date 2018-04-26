@@ -23,8 +23,14 @@ logger.log('info', 'Colendi Telegram Bot is started!');
 colendiBot.on(/\/*/, (msg) => {
     logger.log('silly', msg.text);
     let cmd = msg.text.toLowerCase().substring(1);
+
+    //Remove bot name if it is a mentioned message at group
+    if(cmd.includes('@')) {
+        cmd = cmd.substring(0, cmd.lastIndexOf('@'));
+    }
+
     if (RESPONSES[cmd]) {
-        return colendiBot.sendMessage(msg.from.id, RESPONSES[cmd]);
+        return colendiBot.sendMessage(msg.chat.id, RESPONSES[cmd]);
     }
 });
 
